@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', serif;;
+    font-family: 'Poppins', serif;
 }
 
 p {
@@ -26,6 +26,24 @@ tr:nth-child(odd) {
     flex-direction: row;
     justify-content: center;
     margin: 0 20px;
+}
+
+.footer {
+    margin: 0 20px;
+}
+
+.footer-item {
+    color: #2b2725;
+    text-decoration-color: #2b2725;
+    text-decoration-thickness: 1px;
+    transition: all 0.5s;
+    margin: 0 5px;
+}
+
+.footer-item:hover {
+    color: black;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
 }
 
 .section.section-left {
@@ -52,7 +70,7 @@ tr:nth-child(odd) {
     max-width: 700px;
 }
 
-.item-header, .sub-header {
+.item-header, .sub-header, label {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -64,6 +82,40 @@ ul {
     font-size: 18px;
     /* font-family: 'P'; */
     font-weight: 700;
+}
+
+.contact-form {
+    margin: 0 20px;
+}
+
+input, textarea {
+    border: 1px solid #2b2725;
+    outline: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: #2b2725;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #2b2725;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 700;
+    transition: background-color 0.5s;
+}
+
+button[type="submit"]:hover, button[type="submit"]:focus {
+    outline: none;
+    background-color: black;
 }
 
 @media (max-width: 1024px) {
